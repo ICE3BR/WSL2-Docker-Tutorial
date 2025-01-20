@@ -103,7 +103,7 @@ sudo apt install ca-certificates curl gnupg lsb-release
 ```bash
 sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-echo \"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable\" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
 #### **Passo 3: Instalar o Docker**
@@ -113,7 +113,7 @@ sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
-#### \*\*Passo 4: Permitir Uso do Docker sem \*\*``
+#### **Passo 4: Permitir Uso do Docker sem ****`sudo`**
 
 Adicione seu usuário ao grupo Docker:
 
@@ -137,7 +137,7 @@ docker run hello-world
 
 ## **3. Configurações Avançadas do WSL2 (Opcional)**
 
-### \*\*Arquivo \*\*``
+### **Arquivo ****`.wslconfig`**
 
 Você pode personalizar o uso de recursos do WSL2 (CPU, memória, etc.) editando o arquivo `.wslconfig`:
 
@@ -158,4 +158,13 @@ Você pode personalizar o uso de recursos do WSL2 (CPU, memória, etc.) editando
 ---
 
 Com essas etapas, você terá o **WSL2** e o **Docker** configurados corretamente para um ambiente de desenvolvimento. Em próximos passos, podemos adicionar guias para ferramentas como **pip**, **pipx**, **git**, e o uso do **VSCode** para um setup ainda mais completo.
+
+---
+
+### **Licença**
+
+- Licença: MIT
+- Autor: ICE3BR
+- Ano: 2025
+- Repositório no GitHub: [https://github.com/ICE3BR/WSL2-Docker-Tutorial](https://github.com/ICE3BR/WSL2-Docker-Tutorial)
 
