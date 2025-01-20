@@ -54,6 +54,7 @@ Este repositório contém um guia detalhado e organizado para configurar o WSL2 
 
 </details>
 
+<!-- 
 <details open>
 <summary>
     <strong>XXX</strong>
@@ -63,7 +64,7 @@ Este repositório contém um guia detalhado e organizado para configurar o WSL2 
   - [XXX](XXX)
 
 </details>
-
+-->
 ---
 
 ## **Introdução**
@@ -231,7 +232,7 @@ docker run hello-world
    - Isso exibirá a versão do pipx instalada.
 
 ### **Passo 2: Usar o pipx para Instalar Pacotes**
-O pipx permite instalar e executar pacotes Python isolados. Por exemplo, para instalar o **uv**:
+O pipx permite instalar e executar pacotes Python isolados. Por exemplo, para instalar o **[uv](https://docs.astral.sh/uv/)**:
    ```bash
    pipx install uv
    ```
